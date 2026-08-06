@@ -1,0 +1,337 @@
+body {
+    background-color: white;
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
+}
+
+.title-mod {
+    position: relative;
+    text-shadow: -2px 2px 4px white;
+    color: white;
+    font-family: 'Global User Interface', sans-serif;
+    background-color: black;
+    font-size: 2rem;
+    margin: 0px 0px 50px 0px;
+    width: 100%;
+    max-width: none;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-mod::after {
+    content: "";
+    position: absolute;
+    top: 100%; 
+    background-color: red; 
+    width: 100%;
+    height: 10px;
+}
+
+.title-p-size {
+    font-size: 1rem;
+    font-family: 'Global User Interface', sans-serif;
+    margin: 10px 0px 0px 0px;
+}
+
+h1 {
+    margin: 0px;
+}
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+}
+
+.service-list {
+    list-style: none;
+    margin: 0px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 14px;
+}
+
+.service-list li {
+    position: relative;
+    padding-left: 22px; 
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+}
+
+.service-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: red;
+}
+
+.button-center-and-outline {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.image-outline-and-absent-margin {
+    display: block;
+    margin: 0px;
+    outline: 2px solid darkgray;
+    border-radius: 10px;
+}
+
+.mission-mod {
+    margin: 0;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    padding: 0px 5px 0px 5px;
+}
+
+.extra-info-mod {
+    color: darkgray;
+    font-family: 'Global User Interface', sans-serif;
+    background-color: black;
+    font-size: .75rem;
+    margin: 30px 0px 0px 0px;
+}
+
+.note-mod {
+    color: darkgray;
+    font-family: 'Global User Interface', sans-serif;
+}
+
+.contact-mod {
+    color: red;
+    font-family: 'Global User Interface', sans-serif;
+    font-size: 2rem;
+    align-content: end;
+    margin: 0;
+}
+
+.service-box {
+    position: relative;
+    background-color: black;
+    padding-bottom: 150px;
+    scroll-padding: 0;
+    width: 100%;
+    max-width: none;
+    text-align: center;
+    margin: 50px 0px 0px 0px;
+}
+
+.service-box::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 100%;
+    background-color: dimgray; 
+    width: 100%;
+    height: 10px;
+}
+
+.prompt-mod {
+    text-shadow: -2px 2px 4px white;
+    color: white;
+    font-family: 'Global User Interface', sans-serif;
+    font-size: 4rem;
+    margin: 0px 0px 20px 0px;
+}
+
+.info-row-top {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 18px;
+    width: 100%;
+    height: 504px;
+}
+
+.box-container-contact {
+    background-color: lightgray;
+    padding: 15px;
+    outline: 2px solid darkgray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 70%;
+    text-align: left;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.box-container-description {
+    background-color: lightgrey;
+    outline: 2px solid darkgray;
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.tab {
+    background-color: lightgray;
+    text-shadow: -1px 1px 3px red;
+    outline: 2px solid darkgray;
+    color: red;
+    font-family: 'Global User Interface', sans-serif;
+    font-size: 2rem;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.tab-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.tab-column p {
+    margin: 0;
+}
+
+span {
+    color: white;
+    font-family: 'Global User Interface', sans-serif;
+    font-size: 2rem;
+    -webkit-text-stroke: 1px black;
+}
+
+button {
+    background-color: darkgrey;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #D3D3D3;
+}
+
+.image-direction {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    flex: 1;
+    min-height: 0;
+}
+
+.image-outline {
+    display: block;
+    outline: 2px solid darkgray;
+    border-radius: 10px;
+    flex: 1;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-outline-and-absent-margin img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+}
+
+@media (max-width: 900px) {
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .info-row-top {
+        flex-direction: column;
+        height: auto;
+        gap: 24px;
+    }
+
+    .tab-column {
+        width: 100%;
+    }
+
+    .image-outline-and-absent-margin {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .image-outline-and-absent-margin img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .service-list {
+        grid-template-columns: 1fr;
+    }
+
+    .service-list li {
+        font-size: 1.1rem;
+    }
+
+    .image-direction {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .image-outline {
+        min-width: 140px;
+    }
+
+    .box-container-contact {
+        flex-direction: column;
+        width: 90%;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .button-center-and-outline {
+        flex-wrap: wrap;
+    }
+
+    .prompt-mod {
+        font-size: 2.2rem;
+    }
+
+    .title-mod h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact-mod {
+        font-size: 1.3rem;
+    }
+
+    span {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    
+    .title-mod {
+        font-size: 1.5rem;
+    }
+
+    .prompt-mod {
+        font-size: 1.8rem;
+    }
+
+    .mission-mod {
+        font-size: 1.4rem;
+    }
+}

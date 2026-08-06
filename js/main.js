@@ -7,11 +7,12 @@
 
     if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(text).then(() => {
-            handleSuccess(button);
-    });
+            copySuccess(button);
+        });
+    }
 }
 
-function handleSuccess(button) {
+function copySuccess(button) {
     const originalText = button.innerText;
     button.innerText = "Copied!";
     setTimeout(() => {
